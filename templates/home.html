@@ -1,0 +1,43 @@
+{% extends "layouts.html" %}
+
+{% block body %}
+<section class="msger">
+    <div class="menu">
+        <div class="back"><i class="fa fa-chevron-left"></i> <img
+                src="{{ url_for('static', filename='bg.jpeg') }}" draggable="false" /></div>
+        <!-- <div class="back"><i class="fa fa-chevron-left"></i> <img src="https://ui-avatars.com/api/?name=Food+Expert&background=000000&color=fff" draggable="false"/></div> -->
+        <div class="name">Mobile Guru</div>
+        <div class="last">online </div>
+    </div>
+    <div>
+        <main class="msger-chat" id="msger-chat">
+
+            <div class="msg left-msg">
+                    <div class="msg-img" style="background-image: url(/../static/bg.jpeg)"></div>
+                    <div class="msg-bubble">
+                    <div class="msg-info">
+                        <div class="msg-info-name">Mobile Guru</div>
+                        <div class="msg-info-time">12:45</div>
+                    </div>
+
+                    <div class="msg-text">
+                        Hi, I am Mobile Guru! Go ahead and tell me your name. 😄
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg right-msg">
+
+        </main>
+    </div>
+
+
+    <form class="food-form" id="food-form">
+        <input type="text" class="textarea" id="textarea" autocomplete="off" placeholder="Enter your message...">
+        <button type="submit" class="msger-send-btn">&nbsp; &nbsp; Send</button>
+    </form>
+</section>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src = "{{ url_for('static', filename='script.js')}}">
+</script>
+{% endblock %}

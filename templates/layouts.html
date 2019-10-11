@@ -1,0 +1,23 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+    <title>Mobile Guru Chatbot</title>
+    
+
+</head>
+<body>
+    <input type="hidden" name="pname" id="pname" value="User">
+
+    <input type="hidden" name="flag" id="flag" value="0">
+    <input type="hidden" name="fg" id="fg" value="1">
+    {% block body %}{% endblock %}
+</body>
+
+
+
+</html>
+
+
